@@ -51,6 +51,7 @@ let s:co_grey_19 = {'xterm': 236, 'hex': '#303030'}
 let s:co_grey_27 = {'xterm': 238, 'hex': '#444444'}
 let s:co_grey_42 = {'xterm': 242, 'hex': '#6c6c6c'}
 let s:co_grey_50 = {'xterm': 244, 'hex': '#808080'}
+let s:co_grey_58 = {'xterm': 246, 'hex': '#949494'}
 let s:co_grey_66 = {'xterm': 248, 'hex': '#a8a8a8'}
 let s:co_grey_74 = {'xterm': 250, 'hex': '#bcbcbc'}
 let s:co_grey_85 = {'xterm': 253, 'hex': '#dadada'}
@@ -61,6 +62,8 @@ let s:co_grey_93 = {'xterm': 255, 'hex': '#eeeeee'}
 
 let s:co_red_100 = {'xterm': 52,  'hex': '#5f0000'}
 let s:co_red_500 = {'xterm': 196, 'hex': '#ff0000'}
+let s:co_blu_123 = {'xterm': 67,  'hex': '#5f87af'}
+let s:co_blu_135 = {'xterm': 75,  'hex': '#5fafff'}
 let s:co_yel_351 = {'xterm': 191, 'hex': '#afff5f'}
 
 "   Colors that only apply to GUI
@@ -74,7 +77,7 @@ let s:co_grey_5    = {'xterm': 233, 'hex': '#0e0e0e'}
 let s:co_fg = s:co_grey_66
 let s:co_bg = s:co_grey_0
 
-let s:co_fg_nc = s:co_grey_50
+let s:co_fg_nc = s:co_grey_58
 let s:co_bg_nc = s:co_grey_3
 
 let s:co_none = {'xterm': 'NONE', 'hex': 'NONE'}
@@ -90,12 +93,13 @@ call s:hi ('NormalNC',          s:co_fg_nc,    s:co_bg_nc,      '')
 call s:hi ('Comment',           s:co_grey_27,  s:co_grey_3,     'italic')
 call s:hi ('Constant',          s:co_grey_50,  s:co_grey_5,     '')
 call s:hi ('Error',             s:co_red_500,  s:co_red_shade,  '')
-call s:hi ('Identifier',        s:co_grey_42,  s:co_none,       'italic')
+call s:hi ('Identifier',        s:co_grey_74,  s:co_none,       'italic')
 call s:hi ('PreProc',           s:co_grey_42,  s:co_none,       'italic')
-call s:hi ('Special',           s:co_none,     s:co_none,       '')
+call s:hi ('Special',           s:co_blu_123,  s:co_none,       '')
 call s:hi ('Type',              s:co_grey_42,  s:co_none,       'italic')
 call s:hi ('Todo',              s:co_none,     s:co_none,       '')
 call s:hi ('Statement',         s:co_grey_42,  s:co_none,       'italic')
+call s:hi ('Underlined',        s:co_blu_135,  s:co_none,       'underline')
 
 
 
@@ -157,7 +161,7 @@ call s:hi ('ColorColumn',       s:co_red_500,  s:co_red_shade,  'italic')
 call s:hi ('ErrorMsg',          s:co_red_500,  s:co_none,       '')
 call s:hi ('MatchParen',        s:co_grey_93,  s:co_none,       '')
 call s:hi ('NonText',           s:co_grey_42,  s:co_none,       '')
-call s:hi ('VertSplit',         s:co_grey_3,   s:co_grey_3,     '')
+call s:hi ('VertSplit',         s:co_grey_5,   s:co_grey_5,     '')
 call s:hi ('Visual',            s:co_grey_93,  s:co_grey_7,     '')
 call s:hi ('Whitespace',        s:co_grey_19,  s:co_bg,         '')
 
@@ -184,7 +188,6 @@ call s:hi ('Whitespace',        s:co_grey_19,  s:co_bg,         '')
 " SpecialKey
 " StatusLineTerm
 " StatusLineTermNC
-" Underlined
 " VisualNOS
 " WarningMsg
 
