@@ -67,7 +67,7 @@ let s:co_blu_135 = {'xterm': 75,  'hex': '#5fafff'}
 let s:co_yel_351 = {'xterm': 191, 'hex': '#afff5f'}
 
 "   Colors that only apply to GUI
-"   Term uses the closest brighter analog
+"   Term uses the closest brighter alternative
 
 let s:co_red_shade = {'xterm': 52,  'hex': '#140000'}
 let s:co_grey_5    = {'xterm': 233, 'hex': '#0e0e0e'}
