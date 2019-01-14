@@ -85,11 +85,18 @@ let s:co_none = {'xterm': 'NONE', 'hex': 'NONE'}
 
 
 
+"   Optional - fade non-current views
+
+if get (g:, 'hunson_fade_nc_views', 1)
+	call s:hi ('NormalNC', s:co_fg_nc, s:co_bg_nc, '')
+endif
+
+
+
+
 "   Syntax - Common
 
 call s:hi ('Normal',            s:co_fg,       s:co_bg,         '')
-call s:hi ('NormalNC',          s:co_fg_nc,    s:co_bg_nc,      '')
-
 call s:hi ('Comment',           s:co_grey_27,  s:co_grey_3,     'italic')
 call s:hi ('Constant',          s:co_grey_50,  s:co_grey_5,     '')
 call s:hi ('Error',             s:co_red_500,  s:co_red_shade,  '')
