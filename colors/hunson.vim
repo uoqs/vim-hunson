@@ -62,8 +62,7 @@ let s:co_grey_93 = {'xterm': 255, 'hex': '#eeeeee'}
 
 let s:co_red_100 = {'xterm': 52,  'hex': '#5f0000'}
 let s:co_red_500 = {'xterm': 196, 'hex': '#ff0000'}
-let s:co_blu_123 = {'xterm': 67,  'hex': '#5f87af'}
-let s:co_blu_135 = {'xterm': 75,  'hex': '#5fafff'}
+let s:co_blu_134 = {'xterm': 74,  'hex': '#5fafd7'}
 let s:co_yel_351 = {'xterm': 191, 'hex': '#afff5f'}
 
 "   Colors that only apply to GUI
@@ -96,17 +95,22 @@ endif
 
 "   Syntax - Common
 
+call s:link ('Define',    'Special')
+call s:link ('Exception', 'Special')
+call s:link ('Macro',     'Special')
+call s:link ('PreCondit', 'Special')
+
 call s:hi ('Normal',            s:co_fg,       s:co_bg,         '')
 call s:hi ('Comment',           s:co_grey_27,  s:co_grey_3,     'italic')
-call s:hi ('Constant',          s:co_grey_50,  s:co_grey_5,     '')
+call s:hi ('Constant',          s:co_grey_58,  s:co_grey_5,     '')
 call s:hi ('Error',             s:co_red_500,  s:co_red_shade,  '')
 call s:hi ('Identifier',        s:co_grey_74,  s:co_none,       'italic')
 call s:hi ('PreProc',           s:co_grey_42,  s:co_none,       'italic')
-call s:hi ('Special',           s:co_blu_123,  s:co_none,       '')
+call s:hi ('Special',           s:co_blu_134,  s:co_none,       '')
 call s:hi ('Type',              s:co_grey_42,  s:co_none,       'italic')
 call s:hi ('Todo',              s:co_none,     s:co_none,       '')
 call s:hi ('Statement',         s:co_grey_42,  s:co_none,       'italic')
-call s:hi ('Underlined',        s:co_blu_135,  s:co_none,       'underline')
+call s:hi ('Underlined',        s:co_blu_134,  s:co_none,       'underline')
 
 
 
