@@ -113,8 +113,9 @@ call s:hi ('Underlined',        s:co_blu_135,  s:co_none,       'underline')
 
 "   UI - Alias
 
+call s:hi ('HunsonFocus_0',     s:co_grey_42,  s:co_none,       '')
 call s:hi ('HunsonFocus_1',     s:co_grey_42,  s:co_grey_3,     '')
-call s:hi ('HunsonFocus_2',     s:co_grey_74,  s:co_grey_3,     '')
+call s:hi ('HunsonFocus_2',     s:co_grey_74,  s:co_none,       '')
 call s:hi ('HunsonFocus_3',     s:co_grey_93,  s:co_grey_11,    '')
 
 "   UI - Cursor and line number
@@ -143,7 +144,7 @@ call s:link ('PmenuSel',        'HunsonFocus_3')
 call s:link ('PmenuThumb',      'HunsonFocus_3')
 
 call s:link ('TabLine',         'HunsonFocus_1')
-call s:link ('TabLineFill',     'HunsonFocus_1')
+call s:link ('TabLineFill',     'HunsonFocus_0')
 call s:link ('TabLineSel',      'HunsonFocus_3')
 
 "   UI - Search
@@ -154,7 +155,7 @@ call s:hi ('Search',            s:co_yel_351,  s:co_bg,         '')
 "   UI - Status line
 
 call s:link ('StatusLine',      'HunsonFocus_2')
-call s:link ('StatusLineNC',    'HunsonFocus_1')
+call s:link ('StatusLineNC',    'HunsonFocus_0')
 
 "   UI - all the rest
 
