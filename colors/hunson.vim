@@ -63,7 +63,8 @@ let s:co_grey_93 = {'xterm': 255, 'hex': '#eeeeee'}
 let s:co_red_100 = {'xterm': 52,  'hex': '#5f0000'}
 let s:co_red_500 = {'xterm': 196, 'hex': '#ff0000'}
 let s:co_blu_134 = {'xterm': 74,  'hex': '#5fafd7'}
-let s:co_yel_351 = {'xterm': 191, 'hex': '#afff5f'}
+let s:co_tan_542 = {'xterm': 180, 'hex': '#ffd787'}
+
 
 "   Colors that only apply to GUI
 "   Term uses the closest brighter alternative
@@ -153,8 +154,8 @@ call s:link ('TabLineSel',      'HunsonFocus_3')
 
 "   UI - Search
 
-call s:hi ('IncSearch',         s:co_yel_351,  s:co_bg,         '')
-call s:hi ('Search',            s:co_yel_351,  s:co_bg,         '')
+call s:hi ('IncSearch',         s:co_tan_542,  s:co_bg,         '')
+call s:hi ('Search',            s:co_tan_542,  s:co_bg,         '')
 
 "   UI - Status line
 
