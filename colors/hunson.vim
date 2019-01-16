@@ -154,8 +154,8 @@ call s:link ('TabLineSel',      'HunsonFocus_3')
 
 "   UI - Search
 
-call s:hi ('IncSearch',         s:co_tan_542,  s:co_bg,         '')
-call s:hi ('Search',            s:co_tan_542,  s:co_bg,         '')
+call s:hi ('IncSearch',         s:co_tan_542,  s:co_bg,         'bold')
+call s:hi ('Search',            s:co_tan_542,  s:co_bg,         'bold')
 
 "   UI - Status line
 
