@@ -18,3 +18,11 @@ By default non-current views will fade a bit to make it easier to see which one 
 let g:hunson_fade_nc_views = 0
 colors hunson
 ```
+
+### Background of a constant
+By default the background of a constant is filled with a different color, which is especially useful for viewing strings that contain whitespace characters. This feature can be disabled by setting `g:hunson_fill_const = 0` before scheme is applied:
+
+```vim
+let g:hunson_fill_const = 0
+colors hunson
+```
