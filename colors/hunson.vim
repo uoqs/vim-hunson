@@ -64,6 +64,7 @@ let s:co_red_100 = {'xterm': 52,  'hex': '#5f0000'}
 let s:co_red_500 = {'xterm': 196, 'hex': '#ff0000'}
 let s:co_blu_134 = {'xterm': 74,  'hex': '#5fafd7'}
 let s:co_tan_542 = {'xterm': 180, 'hex': '#ffd787'}
+let s:co_orn_510 = {'xterm': 202, 'hex': '#ff5f00'}
 
 
 "   Colors that only apply to GUI
@@ -121,6 +122,7 @@ call s:hi ('Type',              s:co_grey_42,  s:co_none,       'italic')
 call s:hi ('Todo',              s:co_none,     s:co_none,       '')
 call s:hi ('Statement',         s:co_grey_42,  s:co_none,       'italic')
 call s:hi ('Underlined',        s:co_blu_134,  s:co_none,       'underline')
+call s:hi ('WarningMsg',        s:co_orn_510,  s:co_none,       '')
 
 
 
@@ -211,5 +213,4 @@ call s:hi ('Whitespace',        s:co_grey_19,  s:co_bg,         '')
 " StatusLineTerm
 " StatusLineTermNC
 " VisualNOS
-" WarningMsg
 
