@@ -49,6 +49,7 @@ let s:co_grey_7  = {'xterm': 233, 'hex': '#121212'}
 let s:co_grey_11 = {'xterm': 234, 'hex': '#1c1c1c'}
 let s:co_grey_19 = {'xterm': 236, 'hex': '#303030'}
 let s:co_grey_27 = {'xterm': 238, 'hex': '#444444'}
+let s:co_grey_35 = {'xterm': 240, 'hex': '#585858'}
 let s:co_grey_42 = {'xterm': 242, 'hex': '#6c6c6c'}
 let s:co_grey_50 = {'xterm': 244, 'hex': '#808080'}
 let s:co_grey_58 = {'xterm': 246, 'hex': '#949494'}
@@ -112,7 +113,7 @@ call s:link ('Macro',     'Special')
 call s:link ('PreCondit', 'Special')
 
 call s:hi ('Normal',            s:co_fg,       s:co_bg,         '')
-call s:hi ('Comment',           s:co_grey_27,  s:co_grey_3,     'italic')
+call s:hi ('Comment',           s:co_grey_35,  s:co_grey_3,     'italic')
 call s:hi ('Constant',          s:co_grey_58,  s:co_bg_const,   '')
 call s:hi ('Error',             s:co_red_500,  s:co_red_shade,  '')
 call s:hi ('Identifier',        s:co_grey_74,  s:co_none,       'italic')
