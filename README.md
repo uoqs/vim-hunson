@@ -1,5 +1,6 @@
 <div align="center">
 <img src="doc/img/Lordofevil_soulsucking.png"/>
+<img src="doc/screen/latest.png"/>
 </div>
 
 ## Configure
